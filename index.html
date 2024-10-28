@@ -15,20 +15,23 @@
             padding: 0;
         }
 
-        /* Styling umum untuk semua perangkat */
-        header, footer {
-            background-color: #ffd800;
+        /* Header with image background */
+        header {
+            background-image: url('header-background.jpg'); /* Replace with the path to your image */
+            background-size: cover;
+            background-position: center;
             padding: 20px;
             text-align: center;
+            color: #000;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #000;
+            color: #000; /* Header text color set to black */
         }
         header p {
             font-size: 1.2em;
-            color: #555;
+            color: #000; /* Header subtitle text color set to black */
         }
         .container {
             max-width: 800px;
@@ -93,7 +96,7 @@
             margin: 0 auto 20px;
         }
 
-        /* Media query untuk perangkat dengan lebar maksimum 768px (Tablet dan HP) */
+        /* Responsive styles for tablets and smartphones */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -112,7 +115,7 @@
             }
         }
 
-        /* Media query untuk perangkat dengan lebar maksimum 480px (HP kecil) */
+        /* Responsive styles for small smartphones */
         @media (max-width: 480px) {
             header h1 {
                 font-size: 1.8em;
@@ -143,7 +146,6 @@
     </header>
 
     <div class="container">
-        <!-- SWIFT Logo and About Section Centered -->
         <div class="centered-content">
             <img src="swift-logo.png" alt="SWIFT Logo" class="logo">
             <section class="introduction">
@@ -153,7 +155,6 @@
             </section>
         </div>
 
-        <!-- Roadmap Section -->
         <section class="roadmap">
             <h2>Roadmap</h2>
             <img src="roadmap.png" alt="SWIFT Roadmap Image">
@@ -168,7 +169,6 @@
             </ul>
         </section>
 
-        <!-- Tokenomics Section -->
         <section class="tokenomics">
             <h2>Tokenomics</h2>
             <p>Total Supply: 1,000,000,000 SWIFT</p>
@@ -181,7 +181,6 @@
             <img src="tokenomics.png" alt="Tokenomics chart displaying SWIFT token distribution">
         </section>
 
-        <!-- Community Section -->
         <div class="centered-content">
             <section class="community">
                 <h2>Join Our Community</h2>
