@@ -14,23 +14,21 @@
             margin: 0;
             padding: 0;
         }
+
+        /* Styling umum untuk semua perangkat */
         header, footer {
             background-color: #ffd800;
-            background-image: url('header-background.jpg'); /* Path ke gambar background */
-            background-size: cover; /* Mengatur gambar agar menutupi seluruh area header */
-            background-position: center; /* Memposisikan gambar di tengah */
             padding: 20px;
             text-align: center;
-            color: #fff; /* Mengubah warna teks agar terlihat jelas di atas gambar */
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #fff;
+            color: #333;
         }
         header p {
             font-size: 1.2em;
-            color: #ddd;
+            color: #555;
         }
         .container {
             max-width: 800px;
@@ -94,6 +92,48 @@
             width: 150px;
             margin: 0 auto 20px;
         }
+
+        /* Media query untuk perangkat dengan lebar maksimum 768px (Tablet dan HP) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p, .cta-button {
+                font-size: 1em;
+            }
+            .container {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .cta-button {
+                padding: 8px 15px;
+            }
+        }
+
+        /* Media query untuk perangkat dengan lebar maksimum 480px (HP kecil) */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p, .cta-button {
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 10px;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .logo {
+                width: 100px;
+            }
+            .social-links img {
+                width: 20px;
+                height: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,7 +153,7 @@
             </section>
         </div>
 
-        <!-- Left-Aligned Sections -->
+        <!-- Roadmap Section -->
         <section class="roadmap">
             <h2>Roadmap</h2>
             <img src="roadmap.png" alt="SWIFT Roadmap Image">
@@ -128,6 +168,7 @@
             </ul>
         </section>
 
+        <!-- Tokenomics Section -->
         <section class="tokenomics">
             <h2>Tokenomics</h2>
             <p>Total Supply: 1,000,000,000 SWIFT</p>
@@ -140,17 +181,17 @@
             <img src="tokenomics.png" alt="Tokenomics chart displaying SWIFT token distribution">
         </section>
 
-        <!-- Centered Community Section -->
+        <!-- Community Section -->
         <div class="centered-content">
             <section class="community">
                 <h2>Join Our Community</h2>
                 <p>Connect with us on social media!</p>
                 <div class="social-links">
                     <a href="https://x.com/swift_boot" target="_blank" aria-label="Twitter">
-                        <img src="twitter-logo.png" alt="Twitter Logo">
+                        <img src="twitter-logo.png" alt="">
                     </a> |
                     <a href="https://t.me/+fnl-M_fRH21iMTM9" target="_blank" aria-label="Telegram">
-                        <img src="telegram-logo.png" alt="Telegram Logo">
+                        <img src="telegram-logo.png" alt="">
                     </a>
                 </div>
             </section>
